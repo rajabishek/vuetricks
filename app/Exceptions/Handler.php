@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exceptions;
+namespace Vuetricks\Exceptions;
 
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
