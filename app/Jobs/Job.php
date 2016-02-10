@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs;
+namespace Vuetricks\Jobs;
 
 use Illuminate\Bus\Queueable;
 
