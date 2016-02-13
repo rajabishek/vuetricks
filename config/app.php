@@ -151,10 +151,16 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Vuetricks\Providers\AppServiceProvider::class,
+        Vuetricks\Providers\AuthServiceProvider::class,
+        Vuetricks\Providers\EventServiceProvider::class,
+        Vuetricks\Providers\RouteServiceProvider::class,
+        Vuetricks\Providers\RepositoryServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        McCool\LaravelAutoPresenter\AutoPresenterServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class,
 
     ],
 
@@ -201,7 +207,11 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+        'Form'      => Collective\Html\FormFacade::class, 
+        'Html'      => Collective\Html\HtmlFacade::class,
+        'Image'     => Intervention\Image\Facades\Image::class,
+        'Gravatar'  => Thomaswelton\LaravelGravatar\Facades\Gravatar::class,
     ],
 
 ];
